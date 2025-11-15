@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+<div align="center">
+  
+# StreamHouse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+All-in-One Media Streaming Platform
 
-Currently, two official plugins are available:
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)](https://vitejs.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+</div>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Planned Features (v1 / MVP)
 
-## Expanding the ESLint configuration
+### Movie Streaming
+- Stream movies and shows from our API  
+- High-quality playback on desktop and mobile  
+- Basic playback controls  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Real-time Watch Parties
+- Sync playback with friends  
+- Live chat and reactions  
+- Virtual rooms with custom permissions  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Groups & Communities
+- Shared watchlists  
+- Activity feeds  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Unified Content Discovery
+- Single search across available content  
+- Custom metadata support  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Everywhere Access
+- PWA available on desktop and mobile  
+- Mobile-responsive design  
+- Offline content (desktop-only)  
+- Dark/light mode  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Future Features
+- Personal media hosting: local collections, multiple profiles, cross-device sync  
+- iOS support for mobile and TV apps  
+- Smart recommendations  
+- Public/private group creation & moderation tools  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Built With
+- React 18 + TypeScript  
+- Vite  
+- Tailwind CSS + shadcn/ui  
+- Radix UI Primitives  
+- Lucide React  
+- WebSocket integration  
+
+---
+
+## Privacy & Control
+- Self-hostable  
+- No tracking  
+- Local-first architecture  
+- Encrypted communications  
+- Free as in beer and speech  
+
+> ⚠️ Users are responsible for complying with copyright laws when accessing content via public APIs.
+
+---
+
+## Community & Support
+- [Discussions](https://github.com/streamhouse/streamhouse/discussions)  
+- [Issue Tracker](https://github.com/streamhouse/streamhouse/issues)  
+- [Documentation](https://docs.streamhouse.app)  
+
+Contributions welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
